@@ -1,0 +1,38 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<img class="b-img" src="{{ object.image.url }}" alt="">
+			</div>
+			<div class="col-5">
+				<h2>{{ object.name|title }}</h2>
+				Author : {{ object.author|title }}
+				<br>
+				Genre : 
+				{% if object.genre.all %}
+					{% for gen in object.genre.all %}
+						{{ gen }},
+					{% endfor %}
+				{% else %}
+					Not Available
+				{% endif %}
+				<hr>
+				<div class="mt-4 mb-4">
+					{% if object.description %}
+						{{ object.description }}
+					{% else %}
+						Not Available
+					{% endif %}
+				</div>
+				<hr>
+				Price : Rs {{ object.price }}
+				<br>
+				Copies Left : {{ object.quantity }}
+				<div>
+					{% include 'commerce/cart_update.html' with product=object cart=cart %}
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock content %}

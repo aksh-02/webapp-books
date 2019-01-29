@@ -1,0 +1,25 @@
+{% extends "blog/base.html" %}
+{% block content %}
+	<h1 class="text-center"><strong>Latest Posts</strong></h1>
+	<ul>
+		{% for post in posts %}
+			<li class="list-item">
+				<div class="border border-info pl-4 pt-4 rounded">
+					<img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}" alt="">
+					<a href="{% url 'view-post' slug=post.slug %}"><h2>{{ post.title|capfirst }}</h2></a>
+					<div class="content ">
+						<p>
+							{{ post.text }}
+						</p>
+						<span>
+							<div class="text-right pr-4">
+								<small>Written by <a href="{% url 'user-post' post.author %}">{{ post.author|title }}</a>  on {{ post.date_posted }}</small>
+							</div>
+						</span>
+					</div>		
+				</div>
+				<br />
+			</li>
+		{% endfor %}
+	</ul>
+{% endblock content %}

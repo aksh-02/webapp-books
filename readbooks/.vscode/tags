@@ -1,0 +1,422 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+0001_initial.py	../blog/migrations/0001_initial.py	1;"	kind:file	line:1
+0001_initial.py	../cart/migrations/0001_initial.py	1;"	kind:file	line:1
+0001_initial.py	../commerce/migrations/0001_initial.py	1;"	kind:file	line:1
+0001_initial.py	../orders/migrations/0001_initial.py	1;"	kind:file	line:1
+0001_initial.py	../sell/migrations/0001_initial.py	1;"	kind:file	line:1
+0001_initial.py	../users/migrations/0001_initial.py	1;"	kind:file	line:1
+0002_auto_20181227_1824.py	../users/migrations/0002_auto_20181227_1824.py	1;"	kind:file	line:1
+0002_auto_20190101_1749.py	../commerce/migrations/0002_auto_20190101_1749.py	1;"	kind:file	line:1
+0002_auto_20190119_0611.py	../orders/migrations/0002_auto_20190119_0611.py	1;"	kind:file	line:1
+0003_auto_20190103_2045.py	../commerce/migrations/0003_auto_20190103_2045.py	1;"	kind:file	line:1
+0003_auto_20190121_1448.py	../users/migrations/0003_auto_20190121_1448.py	1;"	kind:file	line:1
+0004_auto_20190103_2137.py	../commerce/migrations/0004_auto_20190103_2137.py	1;"	kind:file	line:1
+0004_auto_20190126_0900.py	../users/migrations/0004_auto_20190126_0900.py	1;"	kind:file	line:1
+0005_auto_20190103_2139.py	../commerce/migrations/0005_auto_20190103_2139.py	1;"	kind:file	line:1
+0005_auto_20190126_0903.py	../users/migrations/0005_auto_20190126_0903.py	1;"	kind:file	line:1
+0006_product_quantity.py	../commerce/migrations/0006_product_quantity.py	1;"	kind:file	line:1
+0006_profile_about.py	../users/migrations/0006_profile_about.py	1;"	kind:file	line:1
+0007_auto_20190105_1731.py	../commerce/migrations/0007_auto_20190105_1731.py	1;"	kind:file	line:1
+ALLOWED_HOSTS	../readbooks/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:28
+AUTH_PASSWORD_VALIDATORS	../readbooks/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:97
+BASE_DIR	../readbooks/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+BlogConfig	../blog/apps.py	/^class BlogConfig(AppConfig):$/;"	kind:class	line:4
+BookForm	../commerce/forms.py	/^class BookForm(forms.ModelForm):$/;"	kind:class	line:5
+BookView	../commerce/views.py	/^class BookView(DetailView):$/;"	kind:class	line:32
+CRISPY_TEMPLATE_PACK	../readbooks/settings.py	/^CRISPY_TEMPLATE_PACK = 'bootstrap4'$/;"	kind:variable	line:135
+Cart	../cart/models.py	/^class Cart(models.Model):$/;"	kind:class	line:36
+CartConfig	../cart/apps.py	/^class CartConfig(AppConfig):$/;"	kind:class	line:4
+CartManager	../cart/models.py	/^class CartManager(models.Manager):$/;"	kind:class	line:8
+Comment	../blog/models.py	/^class Comment(models.Model):$/;"	kind:class	line:35
+CommentForm	../blog/forms.py	/^class CommentForm(ModelForm):$/;"	kind:class	line:9
+CommerceConfig	../commerce/apps.py	/^class CommerceConfig(AppConfig):$/;"	kind:class	line:4
+CommerceHome	../commerce/views.py	/^class CommerceHome(ListView):$/;"	kind:class	line:11
+DATABASES	../readbooks/settings.py	/^DATABASES = {$/;"	kind:variable	line:84
+DEBUG	../readbooks/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
+DeletePost	../blog/views.py	/^class DeletePost(LoginRequiredMixin, UserPassesTestMixin, DeleteView):$/;"	kind:class	line:42
+EMAIL_BACKEND	../readbooks/settings.py	/^EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'$/;"	kind:variable	line:141
+EMAIL_HOST	../readbooks/settings.py	/^EMAIL_HOST = 'smtp.gmail.com'$/;"	kind:variable	line:142
+EMAIL_HOST_PASSWORD	../readbooks/settings.py	/^EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')$/;"	kind:variable	line:146
+EMAIL_HOST_USER	../readbooks/settings.py	/^EMAIL_HOST_USER = os.environ.get('EMAIL_USER')$/;"	kind:variable	line:145
+EMAIL_PORT	../readbooks/settings.py	/^EMAIL_PORT = 587$/;"	kind:variable	line:143
+EMAIL_USE_TLS	../readbooks/settings.py	/^EMAIL_USE_TLS = True$/;"	kind:variable	line:144
+GENRE_CHOICES	../commerce/models.py	/^	GENRE_CHOICES = (('Horror', 'Horror'), ('Thriller', 'Thriller'), ('Mystery', 'Mystery'), $/;"	kind:variable	line:8
+Genre	../commerce/models.py	/^class Genre(models.Model):$/;"	kind:class	line:7
+INSTALLED_APPS	../readbooks/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:33
+LANGUAGE_CODE	../readbooks/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:116
+LOGIN_REDIRECT_URL	../readbooks/settings.py	/^LOGIN_REDIRECT_URL = 'commerce-home'$/;"	kind:variable	line:137
+LOGIN_URL	../readbooks/settings.py	/^LOGIN_URL = 'login'$/;"	kind:variable	line:139
+MEDIA_ROOT	../readbooks/settings.py	/^MEDIA_ROOT = os.path.join(BASE_DIR, 'media')$/;"	kind:variable	line:132
+MEDIA_URL	../readbooks/settings.py	/^MEDIA_URL = '\/media\/'$/;"	kind:variable	line:133
+MIDDLEWARE	../readbooks/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:50
+Meta	../blog/forms.py	/^    class Meta:$/;"	kind:class	line:10
+Meta	../blog/forms.py	/^    class Meta:$/;"	kind:class	line:5
+Meta	../commerce/forms.py	/^	class Meta:$/;"	kind:class	line:8
+Meta	../users/forms.py	/^	class Meta:$/;"	kind:class	line:17
+Meta	../users/forms.py	/^	class Meta:$/;"	kind:class	line:23
+Meta	../users/forms.py	/^	class Meta:$/;"	kind:class	line:9
+Migration	../blog/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../cart/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../commerce/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../commerce/migrations/0002_auto_20190101_1749.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../commerce/migrations/0003_auto_20190103_2045.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../commerce/migrations/0004_auto_20190103_2137.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../commerce/migrations/0005_auto_20190103_2139.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../commerce/migrations/0006_product_quantity.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../commerce/migrations/0007_auto_20190105_1731.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../orders/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../orders/migrations/0002_auto_20190119_0611.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../sell/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../users/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../users/migrations/0002_auto_20181227_1824.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../users/migrations/0003_auto_20190121_1448.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../users/migrations/0004_auto_20190126_0900.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../users/migrations/0005_auto_20190126_0903.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../users/migrations/0006_profile_about.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Order	../orders/models.py	/^class Order(models.Model):$/;"	kind:class	line:6
+OrdersConfig	../orders/apps.py	/^class OrdersConfig(AppConfig):$/;"	kind:class	line:4
+Post	../blog/models.py	/^class Post(models.Model):$/;"	kind:class	line:8
+PostForm	../blog/forms.py	/^class PostForm(ModelForm):$/;"	kind:class	line:4
+Product	../commerce/models.py	/^class Product(models.Model):$/;"	kind:class	line:21
+Profile	../users/models.py	/^class Profile(models.Model):$/;"	kind:class	line:8
+ProfileUpdateForm	../users/forms.py	/^class ProfileUpdateForm(forms.ModelForm):$/;"	kind:class	line:22
+ROOT_URLCONF	../readbooks/settings.py	/^ROOT_URLCONF = 'readbooks.urls'$/;"	kind:variable	line:60
+STATIC_URL	../readbooks/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:130
+SearchConfig	../search/apps.py	/^class SearchConfig(AppConfig):$/;"	kind:class	line:4
+SearchView	../search/views.py	/^class SearchView(ListView):$/;"	kind:class	line:7
+SellConfig	../sell/apps.py	/^class SellConfig(AppConfig):$/;"	kind:class	line:4
+Sold	../sell/models.py	/^class Sold(models.Model):$/;"	kind:class	line:5
+TEMPLATES	../readbooks/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:62
+TIME_ZONE	../readbooks/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:118
+USE_I18N	../readbooks/settings.py	/^USE_I18N = True$/;"	kind:variable	line:120
+USE_L10N	../readbooks/settings.py	/^USE_L10N = True$/;"	kind:variable	line:122
+USE_TZ	../readbooks/settings.py	/^USE_TZ = True$/;"	kind:variable	line:124
+UpdatePost	../blog/views.py	/^class UpdatePost(LoginRequiredMixin, UserPassesTestMixin, UpdateView):$/;"	kind:class	line:52
+User	../cart/models.py	/^User = settings.AUTH_USER_MODEL$/;"	kind:variable	line:5
+UserPostView	../blog/views.py	/^class UserPostView(ListView):$/;"	kind:class	line:62
+UserRegisterForm	../users/forms.py	/^class UserRegisterForm(UserCreationForm):$/;"	kind:class	line:6
+UserUpdateForm	../users/forms.py	/^class UserUpdateForm(forms.ModelForm):$/;"	kind:class	line:14
+UsersConfig	../users/apps.py	/^class UsersConfig(AppConfig):$/;"	kind:class	line:4
+WSGI_APPLICATION	../readbooks/settings.py	/^WSGI_APPLICATION = 'readbooks.wsgi.application'$/;"	kind:variable	line:78
+__init__.py	../blog/__init__.py	1;"	kind:file	line:1
+__init__.py	../blog/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../cart/__init__.py	1;"	kind:file	line:1
+__init__.py	../cart/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../commerce/__init__.py	1;"	kind:file	line:1
+__init__.py	../commerce/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../orders/__init__.py	1;"	kind:file	line:1
+__init__.py	../orders/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../readbooks/__init__.py	1;"	kind:file	line:1
+__init__.py	../search/__init__.py	1;"	kind:file	line:1
+__init__.py	../search/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../sell/__init__.py	1;"	kind:file	line:1
+__init__.py	../sell/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../users/__init__.py	1;"	kind:file	line:1
+__init__.py	../users/migrations/__init__.py	1;"	kind:file	line:1
+__str__	../blog/models.py	/^	def __str__(self):$/;"	kind:member	line:15
+__str__	../blog/models.py	/^	def __str__(self):$/;"	kind:member	line:41
+__str__	../cart/models.py	/^	def __str__(self):$/;"	kind:member	line:44
+__str__	../commerce/models.py	/^	def __str__(self):$/;"	kind:member	line:15
+__str__	../commerce/models.py	/^	def __str__(self):$/;"	kind:member	line:32
+__str__	../orders/models.py	/^	def __str__(self):$/;"	kind:member	line:12
+__str__	../sell/models.py	/^	def __str__(self):$/;"	kind:member	line:19
+__str__	../users/models.py	/^	def __str__(self):$/;"	kind:member	line:18
+__unicode__	../blog/models.py	/^	def __unicode__(self):$/;"	kind:member	line:18
+__unicode__	../blog/models.py	/^	def __unicode__(self):$/;"	kind:member	line:44
+__unicode__	../commerce/models.py	/^	def __unicode__(self):$/;"	kind:member	line:18
+__unicode__	../commerce/models.py	/^	def __unicode__(self):$/;"	kind:member	line:35
+__unicode__	../sell/models.py	/^	def __unicode__(self):$/;"	kind:member	line:22
+about	../users/models.py	/^	about = models.TextField(blank=True, null=True, default="Nothing mentioned")$/;"	kind:variable	line:11
+add_book	../commerce/views.py	/^def add_book(request):$/;"	kind:function	line:19
+add_post	../blog/views.py	/^def add_post(request):$/;"	kind:function	line:11
+address	../users/models.py	/^	address = models.TextField(blank=True, null=True, default="No Address Mentioned")$/;"	kind:variable	line:16
+admin.py	../blog/admin.py	1;"	kind:file	line:1
+admin.py	../cart/admin.py	1;"	kind:file	line:1
+admin.py	../commerce/admin.py	1;"	kind:file	line:1
+admin.py	../orders/admin.py	1;"	kind:file	line:1
+admin.py	../search/admin.py	1;"	kind:file	line:1
+admin.py	../sell/admin.py	1;"	kind:file	line:1
+admin.py	../users/admin.py	1;"	kind:file	line:1
+application	../readbooks/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+apps.py	../blog/apps.py	1;"	kind:file	line:1
+apps.py	../cart/apps.py	1;"	kind:file	line:1
+apps.py	../commerce/apps.py	1;"	kind:file	line:1
+apps.py	../orders/apps.py	1;"	kind:file	line:1
+apps.py	../search/apps.py	1;"	kind:file	line:1
+apps.py	../sell/apps.py	1;"	kind:file	line:1
+apps.py	../users/apps.py	1;"	kind:file	line:1
+author	../blog/models.py	/^	author = models.ForeignKey(User, on_delete=models.CASCADE)$/;"	kind:variable	line:13
+author	../commerce/models.py	/^	author = models.CharField(max_length=30)$/;"	kind:variable	line:23
+book	../sell/models.py	/^	book = models.ForeignKey(Product, on_delete=models.CASCADE)$/;"	kind:variable	line:6
+buyer	../sell/models.py	/^	buyer = models.CharField(max_length=50)$/;"	kind:variable	line:11
+buyer_address	../sell/models.py	/^	buyer_address = models.TextField(blank=True)$/;"	kind:variable	line:13
+buyer_number	../sell/models.py	/^	buyer_number = models.CharField(max_length=50)$/;"	kind:variable	line:12
+c_created	../cart/models.py	/^	c_created = models.DateTimeField(auto_now_add=True)$/;"	kind:variable	line:40
+c_updated	../cart/models.py	/^	c_updated = models.DateTimeField(auto_now=True)$/;"	kind:variable	line:41
+cart	../orders/models.py	/^	cart = models.ForeignKey(Cart, on_delete=models.CASCADE)$/;"	kind:variable	line:8
+cart_home	../cart/views.py	/^def cart_home(request):$/;"	kind:function	line:7
+cart_order	../cart/views.py	/^def cart_order(request):$/;"	kind:function	line:21
+cart_total	../cart/signals.py	/^def cart_total(sender, instance, action, *args, **kwargs):$/;"	kind:function	line:6
+cart_update	../cart/views.py	/^def cart_update(request):$/;"	kind:function	line:11
+change_password	../users/views.py	/^def change_password(request):$/;"	kind:function	line:52
+context_object_name	../blog/views.py	/^    context_object_name = 'posts'$/;"	kind:variable	line:64
+create_profile	../users/signals.py	/^def create_profile(sender, instance, created, **kwargs):$/;"	kind:function	line:8
+created_on	../blog/models.py	/^	created_on = models.DateTimeField(auto_now_add=True)$/;"	kind:variable	line:39
+date_posted	../blog/models.py	/^	date_posted = models.DateTimeField(auto_now_add=True)$/;"	kind:variable	line:12
+date_sold	../sell/models.py	/^	date_sold = models.DateTimeField(auto_now_add=True)    $/;"	kind:variable	line:16
+delivered	../sell/models.py	/^	delivered = models.BooleanField(default=False, blank=False)$/;"	kind:variable	line:17
+dependencies	../blog/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:12
+dependencies	../cart/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:12
+dependencies	../commerce/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:12
+dependencies	../commerce/migrations/0002_auto_20190101_1749.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../commerce/migrations/0003_auto_20190103_2045.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../commerce/migrations/0004_auto_20190103_2137.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../commerce/migrations/0005_auto_20190103_2139.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../commerce/migrations/0006_product_quantity.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../commerce/migrations/0007_auto_20190105_1731.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../orders/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:11
+dependencies	../orders/migrations/0002_auto_20190119_0611.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../sell/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:11
+dependencies	../users/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:12
+dependencies	../users/migrations/0002_auto_20181227_1824.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../users/migrations/0003_auto_20190121_1448.py	/^    dependencies = [$/;"	kind:variable	line:9
+dependencies	../users/migrations/0004_auto_20190126_0900.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../users/migrations/0005_auto_20190126_0903.py	/^    dependencies = [$/;"	kind:variable	line:9
+dependencies	../users/migrations/0006_profile_about.py	/^    dependencies = [$/;"	kind:variable	line:8
+description	../commerce/models.py	/^	description = models.TextField(null=True, blank=True)$/;"	kind:variable	line:24
+edit_profile	../users/views.py	/^def edit_profile(request):$/;"	kind:function	line:31
+email	../users/forms.py	/^	email = forms.EmailField()$/;"	kind:variable	line:15
+email	../users/forms.py	/^	email = forms.EmailField()$/;"	kind:variable	line:7
+employment	../users/models.py	/^	employment = models.CharField(max_length=100, blank=True, default="No Work Mentioned")$/;"	kind:variable	line:13
+field	../blog/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='blog.Post'),$/;"	kind:variable	line:40
+field	../commerce/migrations/0002_auto_20190101_1749.py	/^            field=models.TextField(blank=True, null=True),$/;"	kind:variable	line:16
+field	../commerce/migrations/0003_auto_20190103_2045.py	/^            field=models.CharField(choices=[('Horror', 'Horror'), ('Thriller', 'Thriller'), ('Mystery', 'Mystery'), ('Romance', 'Romance'), ('Biography', 'Biography'), ('Autobiography', 'Autobiography'), ('Sci-Fi', 'Sci-Fi'), ('History', 'History'), ('Children', 'Children'), ('Fiction', 'Fiction'), ('Drama', 'Drama'), ('Poetry', 'Poetry')], max_length=100, unique=True),$/;"	kind:variable	line:16
+field	../commerce/migrations/0003_auto_20190103_2045.py	/^            field=models.ManyToManyField(default='Fiction', to='commerce.Genre'),$/;"	kind:variable	line:21
+field	../commerce/migrations/0004_auto_20190103_2137.py	/^            field=models.CharField(blank=True, default='No Name', max_length=30),$/;"	kind:variable	line:16
+field	../commerce/migrations/0005_auto_20190103_2139.py	/^            field=models.CharField(max_length=30),$/;"	kind:variable	line:16
+field	../commerce/migrations/0006_product_quantity.py	/^            field=models.IntegerField(default=1),$/;"	kind:variable	line:16
+field	../commerce/migrations/0007_auto_20190105_1731.py	/^            field=models.CharField(choices=[('Horror', 'Horror'), ('Thriller', 'Thriller'), ('Mystery', 'Mystery'), ('Romance', 'Romance'), ('Biography', 'Biography'), ('Autobiography', 'Autobiography'), ('Sci-Fi', 'Sci-Fi'), ('History', 'History'), ('Children', 'Children'), ('Fiction', 'Fiction'), ('Drama', 'Drama'), ('Poetry', 'Poetry'), ('Mythology', 'Mythology')], max_length=100, unique=True),$/;"	kind:variable	line:16
+field	../commerce/migrations/0007_auto_20190105_1731.py	/^            field=models.ManyToManyField(to='commerce.Genre'),$/;"	kind:variable	line:21
+field	../orders/migrations/0002_auto_20190119_0611.py	/^            field=models.DecimalField(decimal_places=2, default=0.0, max_digits=100),$/;"	kind:variable	line:16
+field	../orders/migrations/0002_auto_20190119_0611.py	/^            field=models.DecimalField(decimal_places=2, default=0.0, max_digits=100),$/;"	kind:variable	line:21
+field	../users/migrations/0002_auto_20181227_1824.py	/^            field=models.ImageField(default='default.jpeg', upload_to='profile_pics'),$/;"	kind:variable	line:16
+field	../users/migrations/0003_auto_20190121_1448.py	/^            field=models.CharField(blank=True, max_length=10, validators=[django.core.validators.RegexValidator(message='Phone number must be 10 digits only', regex='^\\\\d{10}$')]),$/;"	kind:variable	line:22
+field	../users/migrations/0003_auto_20190121_1448.py	/^            field=models.TextField(blank=True, null=True),$/;"	kind:variable	line:17
+field	../users/migrations/0004_auto_20190126_0900.py	/^            field=models.CharField(blank=True, default='No Work Mentioned', max_length=100),$/;"	kind:variable	line:16
+field	../users/migrations/0004_auto_20190126_0900.py	/^            field=models.TextField(blank=True, default='No Address Mentioned', null=True),$/;"	kind:variable	line:26
+field	../users/migrations/0004_auto_20190126_0900.py	/^            field=models.TextField(blank=True, default='No Hobbies Mentioned', null=True),$/;"	kind:variable	line:21
+field	../users/migrations/0005_auto_20190126_0903.py	/^            field=models.CharField(blank=True, default='No Contact Number Mentioned', max_length=10, validators=[django.core.validators.RegexValidator(message='Phone number must be 10 digits only', regex='^\\\\d{10}$')]),$/;"	kind:variable	line:17
+field	../users/migrations/0006_profile_about.py	/^            field=models.TextField(blank=True, default='Nothing mentioned', null=True),$/;"	kind:variable	line:16
+fields	../blog/forms.py	/^        fields = ['text']/;"	kind:variable	line:12
+fields	../blog/forms.py	/^        fields = ['title', 'text']$/;"	kind:variable	line:7
+fields	../blog/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:19
+fields	../blog/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:28
+fields	../blog/views.py	/^    fields = ['title', 'text']$/;"	kind:variable	line:54
+fields	../cart/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:20
+fields	../commerce/forms.py	/^		fields = ['name', 'author', 'genre', 'description', 'price', 'quantity', 'image']/;"	kind:variable	line:10
+fields	../commerce/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:19
+fields	../commerce/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:26
+fields	../orders/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:18
+fields	../sell/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:18
+fields	../users/forms.py	/^		fields = ['image', 'about', 'employment', 'hobbies', 'phone_number', 'address']/;"	kind:variable	line:25
+fields	../users/forms.py	/^		fields = ['username', 'email', 'password1', 'password2']$/;"	kind:variable	line:11
+fields	../users/forms.py	/^		fields = ['username', 'email']$/;"	kind:variable	line:19
+fields	../users/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:19
+forms.py	../blog/forms.py	1;"	kind:file	line:1
+forms.py	../commerce/forms.py	1;"	kind:file	line:1
+forms.py	../users/forms.py	1;"	kind:file	line:1
+genre	../commerce/forms.py	/^	genre = forms.ModelMultipleChoiceField(queryset=Genre.objects.all(), widget=forms.CheckboxSelectMultiple(), required=False)$/;"	kind:variable	line:6
+genre	../commerce/models.py	/^	genre = models.ManyToManyField(Genre)$/;"	kind:variable	line:25
+get_absolute_url	../blog/models.py	/^	def get_absolute_url(self):$/;"	kind:member	line:21
+get_context_data	../commerce/views.py	/^	def get_context_data(self, *args, **kwargs):$/;"	kind:member	line:37
+get_queryset	../blog/views.py	/^    def get_queryset(self):$/;"	kind:member	line:69
+get_queryset	../search/views.py	/^	def get_queryset(self, *args, **kwargs):$/;"	kind:member	line:10
+hobbies	../users/models.py	/^	hobbies = models.TextField(blank=True, null=True, default="No Hobbies Mentioned")$/;"	kind:variable	line:14
+image	../commerce/models.py	/^	image = models.ImageField(default='default_book.jpeg', upload_to='book_pics')$/;"	kind:variable	line:30
+image	../users/models.py	/^	image = models.ImageField(default='default.jpeg', upload_to='profile_pics')$/;"	kind:variable	line:10
+initial	../blog/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:10
+initial	../cart/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:10
+initial	../commerce/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:10
+initial	../orders/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:9
+initial	../sell/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:9
+initial	../users/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:10
+manage.py	../manage.py	1;"	kind:file	line:1
+model	../blog/forms.py	/^        model = Comment$/;"	kind:variable	line:11
+model	../blog/forms.py	/^        model = Post$/;"	kind:variable	line:6
+model	../blog/views.py	/^    model  = Post$/;"	kind:variable	line:43
+model	../blog/views.py	/^    model = Post$/;"	kind:variable	line:53
+model	../blog/views.py	/^    model = Post$/;"	kind:variable	line:63
+model	../commerce/forms.py	/^		model = Product$/;"	kind:variable	line:9
+model	../commerce/views.py	/^	model = Product$/;"	kind:variable	line:13
+model	../commerce/views.py	/^	model = Product$/;"	kind:variable	line:34
+model	../users/forms.py	/^		model = Profile$/;"	kind:variable	line:24
+model	../users/forms.py	/^		model = User$/;"	kind:variable	line:10
+model	../users/forms.py	/^		model = User$/;"	kind:variable	line:18
+model_name	../blog/migrations/0001_initial.py	/^            model_name='comment',$/;"	kind:variable	line:38
+model_name	../commerce/migrations/0002_auto_20190101_1749.py	/^            model_name='product',$/;"	kind:variable	line:14
+model_name	../commerce/migrations/0003_auto_20190103_2045.py	/^            model_name='genre',$/;"	kind:variable	line:14
+model_name	../commerce/migrations/0003_auto_20190103_2045.py	/^            model_name='product',$/;"	kind:variable	line:19
+model_name	../commerce/migrations/0004_auto_20190103_2137.py	/^            model_name='product',$/;"	kind:variable	line:14
+model_name	../commerce/migrations/0005_auto_20190103_2139.py	/^            model_name='product',$/;"	kind:variable	line:14
+model_name	../commerce/migrations/0006_product_quantity.py	/^            model_name='product',$/;"	kind:variable	line:14
+model_name	../commerce/migrations/0007_auto_20190105_1731.py	/^            model_name='genre',$/;"	kind:variable	line:14
+model_name	../commerce/migrations/0007_auto_20190105_1731.py	/^            model_name='product',$/;"	kind:variable	line:19
+model_name	../orders/migrations/0002_auto_20190119_0611.py	/^            model_name='order',$/;"	kind:variable	line:14
+model_name	../orders/migrations/0002_auto_20190119_0611.py	/^            model_name='order',$/;"	kind:variable	line:19
+model_name	../users/migrations/0002_auto_20181227_1824.py	/^            model_name='profile',$/;"	kind:variable	line:14
+model_name	../users/migrations/0003_auto_20190121_1448.py	/^            model_name='profile',$/;"	kind:variable	line:15
+model_name	../users/migrations/0003_auto_20190121_1448.py	/^            model_name='profile',$/;"	kind:variable	line:20
+model_name	../users/migrations/0004_auto_20190126_0900.py	/^            model_name='profile',$/;"	kind:variable	line:14
+model_name	../users/migrations/0004_auto_20190126_0900.py	/^            model_name='profile',$/;"	kind:variable	line:19
+model_name	../users/migrations/0004_auto_20190126_0900.py	/^            model_name='profile',$/;"	kind:variable	line:24
+model_name	../users/migrations/0005_auto_20190126_0903.py	/^            model_name='profile',$/;"	kind:variable	line:15
+model_name	../users/migrations/0006_profile_about.py	/^            model_name='profile',$/;"	kind:variable	line:14
+models.py	../blog/models.py	1;"	kind:file	line:1
+models.py	../cart/models.py	1;"	kind:file	line:1
+models.py	../commerce/models.py	1;"	kind:file	line:1
+models.py	../orders/models.py	1;"	kind:file	line:1
+models.py	../search/models.py	1;"	kind:file	line:1
+models.py	../sell/models.py	1;"	kind:file	line:1
+models.py	../users/models.py	1;"	kind:file	line:1
+name	../blog/apps.py	/^    name = 'blog'$/;"	kind:variable	line:5
+name	../blog/migrations/0001_initial.py	/^            name='Comment',$/;"	kind:variable	line:18
+name	../blog/migrations/0001_initial.py	/^            name='Post',$/;"	kind:variable	line:27
+name	../blog/migrations/0001_initial.py	/^            name='post',$/;"	kind:variable	line:39
+name	../blog/models.py	/^	name = models.CharField(max_length=60)$/;"	kind:variable	line:36
+name	../cart/apps.py	/^    name = 'cart'$/;"	kind:variable	line:5
+name	../cart/migrations/0001_initial.py	/^            name='Cart',$/;"	kind:variable	line:19
+name	../commerce/apps.py	/^    name = 'commerce'$/;"	kind:variable	line:5
+name	../commerce/migrations/0001_initial.py	/^            name='Genre',$/;"	kind:variable	line:18
+name	../commerce/migrations/0001_initial.py	/^            name='Product',$/;"	kind:variable	line:25
+name	../commerce/migrations/0002_auto_20190101_1749.py	/^            name='description',$/;"	kind:variable	line:15
+name	../commerce/migrations/0003_auto_20190103_2045.py	/^            name='genre',$/;"	kind:variable	line:20
+name	../commerce/migrations/0003_auto_20190103_2045.py	/^            name='name',$/;"	kind:variable	line:15
+name	../commerce/migrations/0004_auto_20190103_2137.py	/^            name='author',$/;"	kind:variable	line:15
+name	../commerce/migrations/0005_auto_20190103_2139.py	/^            name='author',$/;"	kind:variable	line:15
+name	../commerce/migrations/0006_product_quantity.py	/^            name='quantity',$/;"	kind:variable	line:15
+name	../commerce/migrations/0007_auto_20190105_1731.py	/^            name='genre',$/;"	kind:variable	line:20
+name	../commerce/migrations/0007_auto_20190105_1731.py	/^            name='name',$/;"	kind:variable	line:15
+name	../commerce/models.py	/^	name = models.CharField(max_length=100, choices=GENRE_CHOICES, unique=True)$/;"	kind:variable	line:13
+name	../commerce/models.py	/^	name = models.CharField(max_length=60)$/;"	kind:variable	line:22
+name	../orders/apps.py	/^    name = 'orders'$/;"	kind:variable	line:5
+name	../orders/migrations/0001_initial.py	/^            name='Order',$/;"	kind:variable	line:17
+name	../orders/migrations/0002_auto_20190119_0611.py	/^            name='sub_total',$/;"	kind:variable	line:15
+name	../orders/migrations/0002_auto_20190119_0611.py	/^            name='total',$/;"	kind:variable	line:20
+name	../search/apps.py	/^    name = 'search'$/;"	kind:variable	line:5
+name	../sell/apps.py	/^    name = 'sell'$/;"	kind:variable	line:5
+name	../sell/migrations/0001_initial.py	/^            name='Sold',$/;"	kind:variable	line:17
+name	../users/apps.py	/^    name = 'users'$/;"	kind:variable	line:5
+name	../users/migrations/0001_initial.py	/^            name='Profile',$/;"	kind:variable	line:18
+name	../users/migrations/0002_auto_20181227_1824.py	/^            name='image',$/;"	kind:variable	line:15
+name	../users/migrations/0003_auto_20190121_1448.py	/^            name='address',$/;"	kind:variable	line:16
+name	../users/migrations/0003_auto_20190121_1448.py	/^            name='phone_number',$/;"	kind:variable	line:21
+name	../users/migrations/0004_auto_20190126_0900.py	/^            name='address',$/;"	kind:variable	line:25
+name	../users/migrations/0004_auto_20190126_0900.py	/^            name='employment',$/;"	kind:variable	line:15
+name	../users/migrations/0004_auto_20190126_0900.py	/^            name='hobbies',$/;"	kind:variable	line:20
+name	../users/migrations/0005_auto_20190126_0903.py	/^            name='phone_number',$/;"	kind:variable	line:16
+name	../users/migrations/0006_profile_about.py	/^            name='about',$/;"	kind:variable	line:15
+new	../cart/models.py	/^	def new(self, user=None):$/;"	kind:member	line:29
+new_or_get	../cart/models.py	/^	def new_or_get(self, request):$/;"	kind:member	line:9
+objects	../cart/models.py	/^	objects = CartManager()$/;"	kind:variable	line:43
+operations	../blog/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:16
+operations	../cart/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:17
+operations	../commerce/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:16
+operations	../commerce/migrations/0002_auto_20190101_1749.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../commerce/migrations/0003_auto_20190103_2045.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../commerce/migrations/0004_auto_20190103_2137.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../commerce/migrations/0005_auto_20190103_2139.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../commerce/migrations/0006_product_quantity.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../commerce/migrations/0007_auto_20190105_1731.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../orders/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:15
+operations	../orders/migrations/0002_auto_20190119_0611.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../sell/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:15
+operations	../users/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:16
+operations	../users/migrations/0002_auto_20181227_1824.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../users/migrations/0003_auto_20190121_1448.py	/^    operations = [$/;"	kind:variable	line:13
+operations	../users/migrations/0004_auto_20190126_0900.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../users/migrations/0005_auto_20190126_0903.py	/^    operations = [$/;"	kind:variable	line:13
+operations	../users/migrations/0006_profile_about.py	/^    operations = [$/;"	kind:variable	line:12
+order_id	../orders/models.py	/^	order_id = models.CharField(max_length=10, blank=True)$/;"	kind:variable	line:7
+paginate_by	../blog/views.py	/^    paginate_by = 8$/;"	kind:variable	line:66
+paginate_by	../commerce/views.py	/^	paginate_by = 36$/;"	kind:variable	line:15
+phone_number	../users/models.py	/^	phone_number = models.CharField(validators=[phone_regex], max_length=10, blank=True, default="No Contact Number Mentioned")$/;"	kind:variable	line:15
+phone_regex	../users/models.py	/^	phone_regex = RegexValidator(regex=r'^\\d{10}$', message="Phone number must be 10 digits only")$/;"	kind:variable	line:12
+post	../blog/models.py	/^	post = models.ForeignKey(Post, on_delete=models.CASCADE)$/;"	kind:variable	line:38
+post_save_order	../orders/signals.py	/^def post_save_order(sender, instance, created, *args, **kwargs):$/;"	kind:function	line:22
+post_save_total	../orders/signals.py	/^def post_save_total(sender, instance, *args, **kwargs):$/;"	kind:function	line:13
+posts_home	../blog/views.py	/^def posts_home(request):$/;"	kind:function	line:23
+pre_save_order_id	../orders/signals.py	/^def pre_save_order_id(sender, instance, *args, **kwargs):$/;"	kind:function	line:8
+price	../commerce/models.py	/^	price = models.FloatField()$/;"	kind:variable	line:26
+price	../sell/models.py	/^	price = models.DecimalField(null=True, blank=True, max_digits=100, decimal_places=2)$/;"	kind:variable	line:14
+products	../cart/models.py	/^	products = models.ManyToManyField(Product, blank=True)$/;"	kind:variable	line:38
+profile	../users/views.py	/^def profile(request):$/;"	kind:function	line:27
+quantity	../commerce/models.py	/^	quantity = models.IntegerField(default=1)$/;"	kind:variable	line:28
+quantity	../sell/models.py	/^	quantity = models.IntegerField(default=1, blank=True)$/;"	kind:variable	line:7
+ready	../cart/apps.py	/^    def ready(self):$/;"	kind:member	line:7
+ready	../orders/apps.py	/^    def ready(self):$/;"	kind:member	line:7
+ready	../users/apps.py	/^    def ready(self):$/;"	kind:member	line:7
+register	../users/views.py	/^def register(request):$/;"	kind:function	line:10
+save	../blog/models.py	/^	def save(self, *args, **kwargs):$/;"	kind:member	line:24
+save	../commerce/models.py	/^	def save(self, *args, **kwargs):$/;"	kind:member	line:38
+save	../users/models.py	/^	def save(self, *args, **kwargs):$/;"	kind:member	line:21
+save_profile	../users/signals.py	/^def save_profile(sender, instance, **kwargs):$/;"	kind:function	line:14
+sell_order	../sell/views.py	/^def sell_order(request):$/;"	kind:function	line:5
+seller	../commerce/models.py	/^	seller = models.ForeignKey(User, on_delete=models.CASCADE)$/;"	kind:variable	line:27
+seller	../sell/models.py	/^	seller = models.CharField(max_length=50)$/;"	kind:variable	line:8
+seller_address	../sell/models.py	/^	seller_address = models.TextField(blank=True)$/;"	kind:variable	line:10
+seller_number	../sell/models.py	/^	seller_number = models.CharField(max_length=50)$/;"	kind:variable	line:9
+settings.py	../readbooks/settings.py	1;"	kind:file	line:1
+signals.py	../cart/signals.py	1;"	kind:file	line:1
+signals.py	../orders/signals.py	1;"	kind:file	line:1
+signals.py	../users/signals.py	1;"	kind:file	line:1
+slug	../blog/models.py	/^	slug = models.SlugField(unique=True)$/;"	kind:variable	line:11
+slug	../commerce/models.py	/^	slug = models.SlugField(unique=True)$/;"	kind:variable	line:29
+sub_total	../orders/models.py	/^	sub_total = models.DecimalField(default=0.00, max_digits=100, decimal_places=2)$/;"	kind:variable	line:9
+success_url	../blog/views.py	/^    success_url = '\/blog\/'$/;"	kind:variable	line:44
+template_name	../blog/views.py	/^    template_name = 'blog\/user_posts.html'$/;"	kind:variable	line:65
+template_name	../commerce/views.py	/^	template_name = 'commerce\/book_view.html'$/;"	kind:variable	line:35
+template_name	../commerce/views.py	/^	template_name = 'commerce\/home.html'$/;"	kind:variable	line:14
+template_name	../search/views.py	/^	template_name = "search\/s_home.html"$/;"	kind:variable	line:8
+test_func	../blog/views.py	/^    def test_func(self):$/;"	kind:member	line:46
+test_func	../blog/views.py	/^    def test_func(self):$/;"	kind:member	line:56
+tests.py	../blog/tests.py	1;"	kind:file	line:1
+tests.py	../cart/tests.py	1;"	kind:file	line:1
+tests.py	../commerce/tests.py	1;"	kind:file	line:1
+tests.py	../orders/tests.py	1;"	kind:file	line:1
+tests.py	../search/tests.py	1;"	kind:file	line:1
+tests.py	../sell/tests.py	1;"	kind:file	line:1
+tests.py	../users/tests.py	1;"	kind:file	line:1
+text	../blog/models.py	/^	text = models.TextField()$/;"	kind:variable	line:10
+text	../blog/models.py	/^	text = models.TextField()$/;"	kind:variable	line:37
+title	../blog/models.py	/^	title = models.CharField(max_length=50)$/;"	kind:variable	line:9
+total	../cart/models.py	/^	total = models.DecimalField(default=0.00, max_digits=100, decimal_places=2)$/;"	kind:variable	line:39
+total	../orders/models.py	/^	total = models.DecimalField(default=0.00, max_digits=100, decimal_places=2)$/;"	kind:variable	line:10
+total	../sell/models.py	/^	total = models.DecimalField(null=True, blank=True, max_digits=100, decimal_places=2)$/;"	kind:variable	line:15
+update_order_id	../orders/models.py	/^	def update_order_id(self):$/;"	kind:member	line:15
+update_total	../orders/models.py	/^	def update_total(self):$/;"	kind:member	line:24
+urlpatterns	../blog/urls.py	/^urlpatterns = [$/;"	kind:variable	line:4
+urlpatterns	../cart/urls.py	/^urlpatterns = [$/;"	kind:variable	line:4
+urlpatterns	../commerce/urls.py	/^urlpatterns = [$/;"	kind:variable	line:5
+urlpatterns	../readbooks/urls.py	/^urlpatterns = [$/;"	kind:variable	line:25
+urlpatterns	../search/urls.py	/^urlpatterns = [$/;"	kind:variable	line:5
+urls.py	../blog/urls.py	1;"	kind:file	line:1
+urls.py	../cart/urls.py	1;"	kind:file	line:1
+urls.py	../commerce/urls.py	1;"	kind:file	line:1
+urls.py	../readbooks/urls.py	1;"	kind:file	line:1
+urls.py	../search/urls.py	1;"	kind:file	line:1
+user	../cart/models.py	/^	user = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)$/;"	kind:variable	line:37
+user	../users/models.py	/^	user = models.OneToOneField(User, on_delete=models.CASCADE)$/;"	kind:variable	line:9
+view_post	../blog/views.py	/^def view_post(request, slug):$/;"	kind:function	line:30
+views.py	../blog/views.py	1;"	kind:file	line:1
+views.py	../cart/views.py	1;"	kind:file	line:1
+views.py	../commerce/views.py	1;"	kind:file	line:1
+views.py	../orders/views.py	1;"	kind:file	line:1
+views.py	../search/views.py	1;"	kind:file	line:1
+views.py	../sell/views.py	1;"	kind:file	line:1
+views.py	../users/views.py	1;"	kind:file	line:1
+wsgi.py	../readbooks/wsgi.py	1;"	kind:file	line:1

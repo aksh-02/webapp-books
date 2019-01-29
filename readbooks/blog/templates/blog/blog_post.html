@@ -1,0 +1,49 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+	<div class="border border-info pl-4 rounded">
+		<h2>{{ post.title|title }}</h2>
+		<div class="content ">
+			<p>
+				{{ post.text }}
+			</p>
+			<span>
+				<div class="text-right pr-4">
+					<small>Written by <a href="{% url 'user-post' post.author %}">{{ post.author|title }}</a>  on {{ post.date_posted }}</small>
+				</div>
+			</span>
+		</div>		
+	</div>
+	{% if post.author == user %}
+		<a class="btn btn-outline-danger float-right mt-2 mb-1" href="{% url 'delete-post' slug=post.slug %}">Delete</a>
+		<a class="btn btn-outline-info float-right mt-2 mb-1 mr-2" href="{% url 'update-post' slug=post.slug %}">Update</a>
+	{% endif %}
+	<br /> 
+	{% if post.comment_set.all %}
+		<h5>Comments:</h5>
+		<div class="comments ml-4">
+			{% for comment in post.comment_set.all %}
+				<div class="mt-4 mb-4">
+					<h6>
+						<a class="mr-1" href="{% url 'user-post' comment.name %}">{{ comment.name|title }}</a> {{ comment.text }}
+					</h6>
+					<small>{{ comment.created_on|date:"F  d, Y" }}</small>
+					<hr>
+				</div>
+			{% endfor %}
+		</div>
+	{% endif %}
+
+	<br />
+
+	<div class="ml-4">
+		<h6>Add new Comment</h6>
+		<form action="" method="POST">
+			{% csrf_token %}
+			<table>
+				{{ form|crispy }}
+			</table>
+			<button class="btn btn-outline-info float-right">Add Comment</button>
+		</form>
+	</div>
+{% endblock content %}

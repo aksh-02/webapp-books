@@ -1,0 +1,90 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+      <div class="media">
+        <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
+        <div class="media-body">
+          <h2 class="account-heading">{{ user.username|title }}</h2>
+          <p class="text-secondary">{{ user.email }}</p>
+        </div>
+      </div>
+      <div class="container">
+        <p><strong>Employment :</strong> {{ user.profile.employment }}</p>
+        <p><strong>Hobbies :</strong> {{ user.profile.hobbies }}</p>
+        <p><strong>About :</strong> {{ user.profile.about }}</p>
+        <p><strong>Contact :</strong>
+          {% if user.profile.phone_number != "No Contact Number Mentioned" %}
+            +91 {{ user.profile.phone_number }}
+          {% else %}
+            {{ user.profile.phone_number }}
+          {% endif %}
+		</p>
+        <p><strong>Lives In :</strong> {{ user.profile.lives_in|capfirst }}</p>
+        <p><strong>From :</strong> {{ user.profile.from_place|capfirst }}</p>
+        <p><strong>Shipping Address :</strong> {{ user.profile.shipping_address|capfirst }}</p>		
+        <a href="{% url 'edit_profile' %}" class="btn btn-link btn-outline-info float-right">Update Profile</a>
+    </div>
+	</div>
+	<br>
+	<br>
+	<hr>
+	<div class="container">
+		<h1 class="text-center">Your Posts</h1>
+		{% if posts %}
+			{% for post in posts %}
+				<li class="list-group-item">
+					<article class="media content-section">
+						<div class="media-body">
+							<div class="article-metadata">
+								<small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
+							</div>
+							<h2><a class="article-title" href="{% url 'view-post' post.slug %}">{{ post.title|capfirst }}</a></h2>
+							<p class="article-content">{{ post.text }}</p>
+						</div>
+					</article>
+				</li>
+			{% endfor %}
+		{% else %}
+			<h3>You have no posts yet</h3>
+		{% endif %}
+	</div>
+	<br>
+	<br>
+	<hr>
+	<div class="container">
+		<h1 class="text-center">Your Sales</h1>
+		{% if y_sells %}
+			<table class="table table-striped">
+				<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Name</th>
+					<th scope="col">Author</th>
+					<th scope="col">Price</th>
+					<th scope="col">Quantity</th>
+					<th scope="col">Sold</th>
+				</tr>
+				</thead>
+				<tbody>
+					{% for book in y_sells %}
+						<tr>
+							<th scope="row">{{ forloop.counter }}</th>
+							<td>{{ book.name|title }}</td>
+							<td>{{ book.author|title }}</td>
+							<td>Rs {{ book.price }}</td>
+							<td>{{ book.quantity }}</td>
+							<td>0</td>
+						</tr>
+					{% endfor %}
+					<tr>
+						<th colspan="5"></th>
+						<td><strong>Total Amount = Rs 0</strong></td>
+					</tr>
+				</tbody>
+			</table>
+		{% else %}
+			<h3>You have not offered any book yet</h3>
+		{% endif %}
+	</div>
+{% endblock content %}

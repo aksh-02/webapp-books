@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <legend class="border-bottom mb-4">Update Post</legend>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table>
+            {{ form|crispy }}
+        </table>
+        <div class="form-group">
+			<button class="btn btn-outline-info float-right">Update</button>
+			<a class="btn btn-outline-secondary" href="{% url 'view-post' object.slug %">Cancel</a>
+        </div>
+    </form>
+{% endblock content %}

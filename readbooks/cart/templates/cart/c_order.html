@@ -1,0 +1,62 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+	<h1><strong>Please Confirm</strong></h1>
+	<hr>
+	<table class="table table-striped border">
+			<thead>
+			  <tr>
+				<th scope="col">#</th>
+				<th scope="col">Name</th>
+				<th scope="col">Author</th>
+				<th scope="col">Price</th>
+				<th scope="col">Quantity</th>
+			  </tr>
+			</thead>
+			<tbody>
+				{% for object in cart_books %}
+					<tr>
+						<th scope="row">{{ forloop.counter }}</th>
+						<td>{{ object.name|title }}</td>
+						<td>{{ object.author|title }}</td>		
+						<td>Rs {{ object.price }}</td>
+						<td>1</td>
+					</tr>
+				{% endfor %}
+				<tr>
+					<th colspan="4"></th>
+					<td><strong>Cart Total = Rs {{ cart.total }}</strong></td>
+				</tr>
+				<tr>
+					<th colspan="4"></th>
+					<td><strong>Delivery Charges = Rs 50</strong></td>
+				</tr>
+				<tr>
+					<th colspan="4"></th>
+					<td><strong>Total Amount= Rs {{ order.total }}</strong></td>
+				</tr>
+			</tbody>
+		</table>
+	<form action="{% url 'sell_order' %}" method='POST'>{% csrf_token %}
+		<div>
+				{% for bo in books %}
+					<input type="hidden" name="book" value="{{ bo }}">
+				{% endfor %}
+				<input type="hidden" name="buyer" value='{{ buyer }}'>
+				<div class="form-group row">
+						<label for='1' class="col-2">Phone</label>
+						<input id='1' class="form-control col-3" type="text" name="buyer_number" value='{{ buyer.profile.phone_number }}'>
+						<br>
+				</div>
+				<div class="form-group row">
+					<label for='2' class="col-2">Address</label>
+					<input id='2' class="form-control col-md-10" type="text" name="buyer_address" value='{{ buyer.profile.shipping_address }}'>
+					<br>
+				</div>
+				<hr>
+				<div class="text-center">
+					<a href="{% url 'cart:home' %}" class="btn btn-info">Cancel</a>
+					<button type="submit" class="btn btn-success">Confirm</button>
+				</div>
+		</div>
+	</form>
+{% endblock content %}

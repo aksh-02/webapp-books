@@ -1,0 +1,37 @@
+body{
+	padding-top:70px;
+}
+
+.article-img{
+	height: 65px;
+	width: 65px;
+	margin-right: 16px;
+}
+
+.account-img {
+	height: 125px;
+	width: 125px;
+	margin-right: 20px;
+	margin-bottom: 16px;
+	border: 2px solid gray;
+	border-radius: 50%;
+  }
+  
+.card{
+	height: 320px;
+	width: 250px;
+}
+
+.book-img{
+	height: 230px;
+	width: 210px;
+	margin-right: 12px;
+	margin-bottom: 8px;
+}
+
+.b-img {
+	height: 350px;
+	width: 250px;
+	margin-right: 20px;
+	margin-bottom: 16px;
+  }

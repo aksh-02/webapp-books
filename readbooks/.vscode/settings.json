@@ -1,0 +1,5 @@
+{
+    "python.linting.enabled": false,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false
+}

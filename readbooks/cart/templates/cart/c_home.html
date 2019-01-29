@@ -1,0 +1,88 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<h1>Cart</h1>
+{% if cart.products.exists %}
+	<table class="table table-striped">
+		<thead>
+		  <tr>
+			<th scope="col">#</th>
+			<th scope="col">Name</th>
+			<th scope="col">Author</th>
+			<th scope="col">Price</th>
+			<th scope="col">Quantity</th>
+		  </tr>
+		</thead>
+		<tbody>
+			{% for object in cart.products.all %}
+				<tr>
+					<th scope="row">{{ forloop.counter }}</th>
+					<td><a href="{% url 'book-view' object.slug %}">{{ object.name|title }}</a>
+						{% include 'commerce/cart_update.html' with product=object cart=cart in_cart=True %}
+					</td>
+					<td>{{ object.author|title }}</td>
+					<td>
+						{% if object.quantity == 0 %}
+							Sold Out
+						{% else %}
+							Rs {{ object.price }}
+						{% endif %}
+					</td>
+					<td>1</td>
+				</tr>
+			{% endfor %}
+			<tr>
+				<th colspan="4"></th>
+				<td><strong>Cart Total = Rs {{ cart.total }}</strong></td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="text-center">
+		<a href="{% url 'commerce-home' %}"><button class="btn btn-lg btn-success mr-1">Add More</button></a></h3>
+		<a class="btn btn-lg btn-success ml-1" href="{% url 'cart:order' %}">CheckOut</a>
+	</div>
+{% else %}
+	<hr>
+	<div class="container mt-4">
+		<h3 class="text-center">Your Cart is empty
+		<a href="{% url 'commerce-home' %}"><button class="btn btn-outline-info">Add Some</button></a></h3>
+	</div>
+{% endif %}
+<br>
+<br>
+<h1>Orders</h1>
+{% if bought %}
+	<table class="table table-striped">
+		<thead>
+		  <tr>
+			<th scope="col">#</th>
+			<th scope="col">Name</th>
+			<th scope="col">Author</th>
+			<th scope="col">Price</th>
+			<th scope="col">Quantity</th>
+			<th scope="col">Status</th>
+		  </tr>
+		</thead>
+		<tbody>
+			{% for book in bought %}
+				<tr>
+					<th scope="row">{{ forloop.counter }}</th>
+					<td>{{ book.product|title }}</td>
+					<td>{{ book.author|title }}</td>
+					<td>Rs {{ book.price }}</td>
+					<td>1</td>
+					<td>{{ book.status }}</td>
+				</tr>
+			{% endfor %}
+			<tr>
+				<th colspan="5"></th>
+				<td><strong>Total Amount = Rs {{ cart.total }}</strong></td>
+			</tr>
+		</tbody>
+	</table>
+{% else %}
+	<hr>
+	<div class="container mt-4">
+		<h3 class="text-center">No Orders Yet</h3>
+	</div>
+{% endif %}
+{% endblock content %}
